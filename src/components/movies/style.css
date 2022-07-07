@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700,800');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+
+
+.moviesCared{
+    margin: 0;
+    background:#bbb;
+    font-family: 'Montserrat', helvetica, arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 5px;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-shadow: 0 0 90px -10px wheat;
+
+  
+    
+  
+}
+.allmovies
+{background-color: #090909;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  box-shadow: 0 0 90px -10px wheat;
+  /* font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"; */
+    color: #bbb;
+    font-size: 15px;
+    line-height: 1.42857;
+    font-weight: 400;
+
+}
+
+
+.movie_card{
+  position: relative;
+  display: block;
+  width: 800px;
+  height: 350px;
+  margin: 80px auto; 
+  overflow: hidden;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  transition: all 0.4s;
+  box-shadow: 0px 0px 90px -25px wheat;
+}
+ .movie_card hover{
+    transform: scale(1.02);
+    transition: all 0.4s;
+    flex-wrap: wrap;
+
+
+  }
+  .info_section{
+    position: relative;
+    width: 100%;
+    height: 100%;
+	  /* background-blend-mode: ; */
+    z-index: 2;
+    border-radius: 10px;
+  }
+    .movie_header{
+      position: relative;
+      padding: 25px;
+
+      height: 40%;}
+      .movie_header h1{
+        text-align: center;
+        color: wheat;
+        font-weight: 700;
+        
+      }
+      
+      h4{
+        color: wheat;
+        font-weight: 700;
+      }
+      .minutes{
+        display: inline-block;
+        margin-top: 15px;
+        color: #555;
+        padding: 5px;
+        border-radius: 5px;
+        border: 1px solid rgba(0,0,0,0.05);
+      }
+      .type{
+        display: inline-block;
+        color: #959595;
+        margin-left: 10px;
+      }
+      .locandina{
+        position: relative;
+        float: left;
+        margin-right: 20px;
+        height: 300px;
+        
+        box-shadow: 0 0 20px -10px wheat;
+      }
+    
+    .movie_desc{
+      padding: 25px;
+      height: 50%;}
+      .movie_desc text{
+        color: wheat;
+      }
+    
+  
+  .blur_back{
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    height: 100%; right: 0;
+    background-size: cover;
+    border-radius: 11px;
+  }
+
+
+@media screen and (min-width: 768px) {
+  .movie_header{
+    width: 65%;
+  }
+  
+  .movie_desc{
+    width: 50%;
+  }
+  
+  .info_section{
+    background: linear-gradient(to right, #090909 50%, transparent 100%);
+  }
+  
+  .blur_back{
+    width: 80%;
+    background-position: -100% 10% !important;  
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .movie_card{
+    width: 95%;
+    margin: 70px auto; 
+    min-height: 350px;
+    height: auto;
+  }
+  
+  .blur_back{
+    width: 100%;
+    background-position: 50% 50% !important;  
+  }
+  
+  .movie_header{
+    width: 100%;
+    margin-top: 85px;
+  }
+  
+  .movie_desc{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .info_section{
+    background: linear-gradient(to top, #393737 50%, transparent 100%);
+    display: inline-grid;
+  }
+}
+
+
+.bright_back{
+  /* background: url("https://occ-0-2433-448.1.nflxso.net/art/cd5c9/3e192edf2027c536e25bb5d3b6ac93ced77cd5c9.jpg"); */
+}
+.nextback{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.nextButton{
+    display: flex;
+    /* margin: 0% auto; */
+    cursor: pointer;
+    font-size: 50px;
+    right: 0px;
+    
+    }
+    .backButton{
+        display: flex;
+        /* margin: 0% auto; */
+        cursor: pointer;
+        font-size: 50px;
+    }

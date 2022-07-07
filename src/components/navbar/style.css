@@ -1,0 +1,38 @@
+.SEARCH-Container input {
+    padding: 10px;
+    border-color: none;
+    border: none;
+    border-radius: 15px;
+    border: -0.7px solid;
+    border: 0.1px solid #dcd9d9;
+    outline-color: #dcd9d9;
+    font-size: 16px;
+    color: var(--BlackColor);
+    outline-style: none;
+    padding-left: 15px;
+  }
+  .navvv{
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    color: #bbb;
+    font-size: 15px;
+    line-height: 1.42857;
+    font-weight: 400;
+  }
+.SEARCH-Container {
+    position: relative;
+  }
+  .SEARCH-Container .SEARCH-ICON {
+    position: absolute;
+    top: 30%;
+    right: 5%;
+  }
+  
+  .SEARCH-Container .SEARCH-ICON svg {
+    font-size: 20px;
+  }
+  .resultInSearch{
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  }
